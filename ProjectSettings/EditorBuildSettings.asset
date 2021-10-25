@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Homescene.unity
     guid: 722fc2ebccbf3c54cbcd0b4d8668d238
+  - enabled: 1
+    path: Assets/Scenes/Shopscene.unity
+    guid: 6323869f5c15ed54695dc3c7d5291dc2
+  - enabled: 1
+    path: Assets/Scenes/Inventoryscene.unity
+    guid: 85c6559d436eca84aa23909cb6dfd157
   m_configObjects: {}
