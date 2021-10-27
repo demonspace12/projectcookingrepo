@@ -17,4 +17,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Inventoryscene.unity
     guid: 85c6559d436eca84aa23909cb6dfd157
+  - enabled: 1
+    path: Assets/Scenes/Mapselectscene.unity
+    guid: 6dc19e8384b9e0d47a201c762d914bd3
+  - enabled: 1
+    path: Assets/Scenes/stagescene/stage01.unity
+    guid: 1628cfcb434876240a5d9ec779b6f335
+  - enabled: 1
+    path: Assets/Scenes/stagescene/stage02.unity
+    guid: 65a5dd73dcc2ff744820d190109731e4
+  - enabled: 1
+    path: Assets/Scenes/stagescene/stage03.unity
+    guid: 5a1caad0d1eaba940b9ba67decdc10c8
+  - enabled: 1
+    path: Assets/Scenes/stagescene/stage04.unity
+    guid: 052522b2827b6f64aa03eed7a6f72bb8
+  - enabled: 1
+    path: Assets/Scenes/stagescene/stage05.unity
+    guid: ebbed0b9913bcaa45bacf0938c405f72
   m_configObjects: {}
