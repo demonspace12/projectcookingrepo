@@ -65,5 +65,9 @@ public class Levelselection : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
     }
+    public void backtohome()
+    {
+        SceneManager.LoadScene("Homescene");
+    }
     
 }

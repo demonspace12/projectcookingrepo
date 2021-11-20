@@ -6,5 +6,6 @@ public class Shoptemplete : MonoBehaviour
 {
     public Text  titletext;
     public Text  costtext;
+    public GameObject iconshop;
          
 }
