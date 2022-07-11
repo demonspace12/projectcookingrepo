@@ -5,19 +5,37 @@ using UnityEngine;
 public class InventorySC : MonoBehaviour
 
 {
-    //public Shopitem[] allitem;
-    //public string inventorydata = "";
+   
     public Shopitem[] itemlist = new Shopitem[30];
     public List<Inventoryslot> inventoryslots = new List<Inventoryslot>();
     public string saveitem;
+    public Shopitem[] shopitemsinventory;
 
 
-   
+
+
     public void Update()
     {
         UpdateslotUI();
+        //checkinventory();
     }
-    private bool add(Shopitem item)
+
+    public void checkinventory()
+
+    {
+       
+        for (int i = 0; i < shopitemsinventory.Length; i++)
+        {
+
+            if (PlayerPrefs.GetInt(shopitemsinventory[i].title) > 0)
+            {
+                itemlist[i] = shopitemsinventory[i];
+                inventoryslots[i].item = shopitemsinventory[i];
+                //add(shopitemsinventory[i]);
+            }
+        }
+    }
+    /*private bool add(Shopitem item)
     {
 
        
@@ -33,7 +51,7 @@ public class InventorySC : MonoBehaviour
             }
         }
         return false;
-    }
+    }*/
     
     public void UpdateslotUI()
     {
@@ -44,23 +62,13 @@ public class InventorySC : MonoBehaviour
         }
         
     }
-    public void Additem(Shopitem item)
+    /*public void Additem(Shopitem item)
     {
         bool hasAdd = add(item);
         if (hasAdd)
         {
             //UpdateslotUI();
         }
-    }
-    /*public void saveinventory()
-    {
-        if (inventorydata == null)
-        {
-            Debug.Log("nodata");
-        }
-        else
-        {
-            Debug.Log("aa");
-        }
     }*/
+    
 }

@@ -69,5 +69,9 @@ public class Levelselection : MonoBehaviour
     {
         SceneManager.LoadScene("Homescene");
     }
-    
+    public void testgame()
+    {
+        SceneManager.LoadScene("testgame");
+    }
+
 }

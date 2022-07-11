@@ -8,7 +8,9 @@ public class Setname : MonoBehaviour
 {
    
     public string savename;
-    
+    public Shopitem[] shopitemspref;
+    public Propkitchen[] propitempref;
+
     public Text inputtext;
  
     public void Update()
@@ -30,9 +32,20 @@ public class Setname : MonoBehaviour
     }
     public void setname()
     {
+        for(int i = 0; i < shopitemspref.Length; i++)
+        {
+            PlayerPrefs.SetInt(shopitemspref[i].title,0);
+            Debug.Log(PlayerPrefs.GetInt(shopitemspref[i].title));
+        }
+        for (int i = 0; i < propitempref.Length; i++)
+        {
+            PlayerPrefs.SetInt(propitempref[i].Propsname, 1);
+            Debug.Log(PlayerPrefs.GetInt(propitempref[i].Propsname));
+        }
+
+
         savename = inputtext.text;
-        
-        PlayerPrefs.SetInt("Coin",100);
+        PlayerPrefs.SetInt("Coin",500);
         PlayerPrefs.SetString("Nameplayer", savename);
         SceneManager.LoadScene("Homescene");
       

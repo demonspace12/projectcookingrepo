@@ -18,16 +18,14 @@ public class Shopmanager : MonoBehaviour
     public Button[] allbutton;
     public InventorySC inventoryN;
 
-    //inventory
-    //public Shopitem[] itemlist = new Shopitem[20];
-    // Start is called before the first frame update
+    
     void Start()
     {
         for (int i = 0; i < shopitems.Length; i++)
         {
            
             shopPanelS[i].SetActive(true);
-            Debug.Log("1");
+            //Debug.Log("1");
         }
         
         LoadShop();
@@ -45,7 +43,7 @@ public class Shopmanager : MonoBehaviour
     }
     public void addcion()
     {
-        coin++;
+        coin+=20;
         PlayerPrefs.SetInt("Coin", coin);
     }
     public void LoadShop()
@@ -59,9 +57,10 @@ public class Shopmanager : MonoBehaviour
     }
     public void toinventory()
     {
-        //SceneManager.LoadScene("Inventoryscene");
+        
         checkinventory = true;
         invent.gameObject.SetActive(checkinventory);
+        inventoryN.checkinventory();
 
     }
     public void toshop()
@@ -91,7 +90,8 @@ public class Shopmanager : MonoBehaviour
             coin = coin - shopitems[numbutton].cost;
             PlayerPrefs.SetInt("Coin",coin);
             textcoin.text = "Coin : " + coin.ToString();
-            inventoryN.Additem(shopitems[numbutton]);
+            PlayerPrefs.SetInt(shopitems[numbutton].title, PlayerPrefs.GetInt(shopitems[numbutton].title)+1);
+            
         }
        
     }
@@ -99,15 +99,5 @@ public class Shopmanager : MonoBehaviour
     {
         SceneManager.LoadScene("Homescene");
     }
-    /*public  bool additemtoinventory(Shopitem item) { 
-        for(int i=0 ; i<itemlist.Length; i++)
-        {
-            if(itemlist[i] == null)
-            {
-                itemlist[i] = item;
-                return true;
-            }
-        }
-        return false;
-    }*/
+    
 }

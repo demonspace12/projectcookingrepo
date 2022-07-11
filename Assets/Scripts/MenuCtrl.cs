@@ -10,6 +10,12 @@ public class MenuCtrl : MonoBehaviour
     public Text showname;
     public Text showcoin;
     public int coinhome;
+
+    public AudioSource bgsound;
+
+
+    public GameObject setting;
+    [SerializeField] private bool checksetting = false;
     public void Start()
     {
        
@@ -31,5 +37,27 @@ public class MenuCtrl : MonoBehaviour
     public void Loadscene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+
+    }
+    public void settingbutton()
+    {
+        checksetting = true;
+        setting.gameObject.SetActive(checksetting);
+    }
+    public void close()
+    {
+        checksetting = false;
+        setting.gameObject.SetActive(checksetting);
+    }
+    public void newgame()
+    {
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene("createnameplayer");
+
+    }
+    public void quitgame()
+    {
+        Application.Quit();
+       
     }
 }

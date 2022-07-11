@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3f3f9c127273445aacb7a767b6a8a9, type: 3}
+  m_Name: Black Sesame Poached Eggs
+  m_EditorClassIdentifier: 
+  foodname: Black Sesame Poached Eggs
+  foodicon: {fileID: 21300000, guid: 0329f0ef28b2e6a4c9327bf83bc04ac1, type: 3}
+  Food_material_1: egg
+  Food_material_2: poppy
+  Food_material_3: minced pork
+  Food_material_4: spring onion
+  Pic_material_1: {fileID: 0}
+  Pic_material_2: {fileID: 0}
+  Pic_material_3: {fileID: 0}
+  Pic_material_4: {fileID: 0}

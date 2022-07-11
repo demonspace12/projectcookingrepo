@@ -7,6 +7,7 @@ public class Inventoryslot : MonoBehaviour
 {
     public Shopitem item;
     public GameObject icon;
+    public GameObject value;
 
 
     public void Updateslot()
@@ -16,11 +17,15 @@ public class Inventoryslot : MonoBehaviour
         {
             icon.GetComponent<Image>().sprite = item.icon;
             icon.SetActive(true);
-            
+            value.GetComponent<Text>().text = PlayerPrefs.GetInt(item.title).ToString();
+            value.SetActive(true);
+
+
         }
         else
         {
             icon.SetActive(false);
+            value.SetActive(false);
         }
     }
     

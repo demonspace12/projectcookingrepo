@@ -153,6 +153,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   savename: 
+  shopitemspref:
+  - {fileID: 11400000, guid: 51779ef424877154c9be0b1025728190, type: 2}
+  - {fileID: 11400000, guid: 368ca70e65ca2ba4da7fb7efbdff7e50, type: 2}
+  - {fileID: 11400000, guid: 216aa846cefc31b48a4a5490783dd592, type: 2}
+  - {fileID: 11400000, guid: a77c5b76f934a3d4b903b9f8519d71a1, type: 2}
+  - {fileID: 11400000, guid: 71ac543bcf076f248931e534a3f45d61, type: 2}
+  - {fileID: 11400000, guid: 7ea69479e1c25764aa23bbe0bd753d3e, type: 2}
+  - {fileID: 11400000, guid: 962c1fd7da20bcf43aa564e01aaae2e3, type: 2}
+  - {fileID: 11400000, guid: 7c512065cff866042a1ae6e41504e095, type: 2}
+  - {fileID: 11400000, guid: 9a64756515f02e743b1f54f22e7132ac, type: 2}
+  - {fileID: 11400000, guid: fc9021f195d220e438ccfc0629c8d4b3, type: 2}
+  - {fileID: 11400000, guid: ed25ad1c871b60148b351197dad8d3a9, type: 2}
+  - {fileID: 11400000, guid: f84aae89c91eae142821ff559490b0c0, type: 2}
+  - {fileID: 11400000, guid: 2624820b15fd94747aa03e10f85c7d43, type: 2}
+  - {fileID: 11400000, guid: d38bc2090dfc3514f9a1e6e15ed95560, type: 2}
+  - {fileID: 11400000, guid: 877927bb6842b884d92a86b5c82302ba, type: 2}
+  - {fileID: 11400000, guid: 68edb8718092e864f838ec1ff7d2339f, type: 2}
+  propitempref:
+  - {fileID: 11400000, guid: 102ad9c88689066489083daf5605acd1, type: 2}
+  - {fileID: 11400000, guid: 574b1fea9ab0eca41ab0cd3b8cf2d8e7, type: 2}
   inputtext: {fileID: 634547610}
 --- !u!4 &98170522
 Transform:
@@ -1000,7 +1020,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0.5
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
